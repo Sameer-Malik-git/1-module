@@ -1,0 +1,23 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) 
+	{
+		Scanner anything = new Scanner(System.in);
+	
+		long sum = 500000000000l;
+		long val = 100000000000000l; // l -> long 
+		System.out.println(sum);
+		System.out.println(val);
+		
+		int a = 5;
+		double b = a; // implicit typecasting (compiler) 
+		
+		double z = a + b;
+		
+		double c = 5.9;
+		int d = (int)c; // explicit typecasting (user forcily)
+		
+		System.out.println(d);
+	}
+}
