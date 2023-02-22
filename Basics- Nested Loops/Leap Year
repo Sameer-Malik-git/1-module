@@ -1,0 +1,43 @@
+import java.util.*;
+
+public class Main
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		//your code here
+		Scanner in = new Scanner(System.in);
+		
+		int year = in.nextInt();
+        // A Leap year is the year that is multiple of 4 except multiples of 100 which are not multiples of 400 are not leap years.
+		
+		// If year is not multiple of 4 it not be a leap year 
+		// If year is a multiple of 4 
+		// --> IF year is multiple of 100, 
+		// 
+		// --> If year is not multiple of 100, then definately a leap year 
+		
+		 if(year%4==0)
+		 {
+		     if(year%100 == 0)
+		     {
+		         if(year%400 == 0)
+		         {
+		             System.out.println(1); // 2000
+		         }
+		         else
+		         {
+		             System.out.println(0); // 1900,1700
+		         }
+		     }
+		     else
+		     {
+		         System.out.println(1); // 2016,2012,2020
+		     }
+		 }
+		 else
+		 {
+		     System.out.println(0); // 1111
+		 }
+		
+	}
+}
