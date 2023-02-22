@@ -1,0 +1,20 @@
+import java.util.*;
+
+public class Main
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		//your code here
+		Scanner in = new Scanner(System.in);
+		
+		int a = in.nextInt();
+		int b = in.nextInt();
+		int c = in.nextInt();
+		
+		// Math.min(a,b,c) --> wrong 
+// 		int d = (a>b && a>c) ? a : ((b>c && b>a) ? b: c);
+
+        int d = (int)(Math.max(a,Math.max(b,c)));
+	    
+	}
+}
