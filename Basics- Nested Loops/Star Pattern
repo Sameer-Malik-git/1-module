@@ -1,0 +1,26 @@
+import java.util.*;
+
+public class Main
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		//your code here
+		Scanner in = new Scanner(System.in);
+		
+		int n = in.nextInt();
+		
+		// Row = 0, Loop 2 will run 1 time  
+	    // Row = 1, Loop 2 will run 2 time  
+	    // Row = 2, Loop 2 will run 3 time 
+	    // Row = 3, Loop 2 will run 4 time 
+	    // Row = (n-1), Loop 2 will run n time 
+		for(int row=1;row<=n;row++)
+		{
+		    for(int col=1;col<=row;col++) // Loop 2 
+		    {
+		        System.out.print("*");
+		    }
+		    System.out.println();
+		}
+	}
+}
