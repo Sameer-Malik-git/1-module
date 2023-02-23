@@ -1,0 +1,37 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner in = new Scanner(System.in);
+	    
+	    String a = in.next();
+	    String b = in.next();
+	    
+	    int l = b.length();
+	    a = a+a; 
+	    
+	    boolean flag = false;
+	    
+	    for(int i=0;i+l<a.length();i++) // A.length()
+	    {
+            String currentWindow = a.substring(i,i+l); // O(L) L = B.length() m 
+            if(currentWindow.compareTo(b) == 0)
+            {
+                flag = true;
+                break;
+            }
+	    }
+	    
+	    // Time complexity = n*m
+	    
+	    if(flag == true)
+	    {
+	        System.out.println("YES");
+	    }
+	    else
+	    {
+	        System.out.println("NO");
+	    }
+
+	}
+}
