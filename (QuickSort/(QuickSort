@@ -1,0 +1,73 @@
+import java.util.*;
+
+public class Main
+{
+    // Modification of SORT --> QuickSelect (Leetcode Medium)
+    
+    // modify part --> Take last element as pivot, Arrange the elements and return the index of pivot element 
+    public static int partition(int start,int end,int arr[])
+    {
+        // Arrange the elements correct and after that return index of pivot element 
+        int pivot = arr[end];
+        int i = start; // correct position where smaller values need to be placed 
+        for(int j=start;j<=(end-1);j++)
+        {
+            if(arr[j]<pivot)
+            {
+                // do something (place jth value at ith position)
+                int tmp = arr[j];
+                arr[j] = arr[i];
+                arr[i] = tmp;
+                
+                i++; // so that next element can be at the correct position
+            }
+        }
+        
+        // pivot at ith position 
+        int tmp = arr[end];
+        arr[end] = arr[i];
+        arr[i] = tmp;
+        
+        return i; // return the index of pivot element 
+    }
+    
+    // recursive 
+    public static void quickSort(int start,int end,int arr[])
+    {
+        if(start > end)
+        {
+            return;
+        }
+        
+        if(start == end)
+        {
+            return;
+        }
+        
+        int indexOfPivot = partition(start,end,arr); // return the index of pivot element 
+        
+        // recursive case
+        quickSort(start,indexOfPivot-1,arr); // First Part 
+        quickSort(indexOfPivot+1,end,arr); // Second Part 
+    }
+    public static void main (String[] args) throws java.lang.Exception
+	{
+		//your code here
+		Scanner in = new Scanner(System.in);
+	    
+	    int n = in.nextInt();
+	    int arr[] = new int[n];
+	    
+	    for(int i=0;i<n;i++)
+	    {
+	        arr[i] = in.nextInt();
+	    }
+	    
+	    quickSort(0,n-1,arr);
+	    
+	    for(int i=0;i<n;i++)
+	    {
+	        System.out.print(arr[i]+" ");
+	    }
+	}
+}
