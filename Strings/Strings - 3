@@ -1,0 +1,29 @@
+import java.util.*;
+
+public class Main
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		//your code here
+        Scanner sc=new Scanner(System.in);
+        
+        int arr[] = new int[10];
+        int sizeOfArray = arr.length; // without bracket 
+        // arr[i] --> ith element of arrays
+        
+        String s = sc.next(); // for taking input a single word 
+        // String a = sc.nextLine(); //  for taking input sentence
+        
+        int size = s.length(); // with bracket
+        
+        for(int i=0;i<s.length();i++)
+        {
+            // s.charAt(i) --> ith character 
+            // ith character present in the string 
+            System.out.println(s.charAt(i)); // s[i]
+        }
+        
+        
+        System.out.println(s);
+	}
+}
