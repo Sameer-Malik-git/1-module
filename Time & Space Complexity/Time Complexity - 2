@@ -1,0 +1,167 @@
+public class Main
+{
+	public static void main(String[] args) 
+	{
+		
+		// 1. Number of operations in one second -> 10^8
+		// 10^8 --> 1 
+        //   (multiplying by 10)
+		// 10^9 --> 10 seconds 
+		
+		// O(1) --> Constant Time Complexity 
+		// O(log n) --> logamathic time Complexity 
+		// O(sqrt(N)) 
+		// O(N) --> Linear 
+		// O(Nlog N) (base 10) 
+		// O(N^2) --> Quadratic time complexity 
+		// O(N^3)
+		
+		// O(2^N) --> Exponential Time Complexity 
+		// O(N^N)
+		
+		int n = 1000;
+		int m = 1000;
+		
+		for(int i=0;i<(n+5);i++) // Time Complexity - O(N)
+		{
+		    
+		}
+		
+		int k = n;
+		// log n 
+		while(k>=1)
+		{
+		    k = k/n;
+		}
+		
+		int k = 1;
+		// N 
+		while(k<=n)
+		{
+		    k = k+2;
+		}
+		
+		for(int i=(n-1);i>=0;i--)
+		{
+		    
+		}
+		
+		
+		
+		for(int i=0;i<5.5;i++)
+		{
+		    
+		}
+		
+		if() // O(1)
+		{
+		    for(int i=0;i<n;i++)
+		    {
+		        
+		    }
+		}
+		else if() // O(1)
+		{
+		    for(int i=0;i<n*n;i++)
+		    {
+		        
+		    }
+		}
+		else // O(1)
+		{
+		    for(int i=0;i<n*n*n;i++)
+		    {
+		        
+		    }
+		}
+		
+		// Operations = N*(N-1)/2 = (N^)
+		// Time Complexity = O(N^2)
+		
+		// i = 0, j --> 0
+	    // i = 1, j --> 1 
+	    // i = (n-1), j--> (n-1)
+	    
+	    // Operations = 0+1+2+3+4 ----- (n-1)
+		for(int i=0;i<n;i++)
+		{
+		    for(int j=0;j<i;j++)
+    		{
+    		    
+    		}
+		}
+		
+		// Operations = n + nlog n 
+		// Time Complexity = O(Nlog n)
+		for(int i=1;i<=n;i++)
+		{
+		    // i = 1, LOOP 2 --> n 
+		    // i = 2, LOOP 2 --> (n/2)
+		    // i = 3, LOOP 2 --> (n/3)
+		    // i = 4, LOOP 2 --> (n/4)
+		    
+		    // i = n,  LOOP 2 --> 1
+		    for(int j=1;j<=n;j=j+i) // LOOP 2
+    		{
+    		    
+    		}
+		}
+		
+		// Time Complexity - n * (n log n) = n^2 * logn
+		for(int i=0;i<n;i++)
+		{
+		    Arrays.sort(); // n log n
+		}
+		
+		// Operations = N*N/2 
+		// Time Complexity = N^2
+		for(int i=0;i<n;i++)
+		{
+		    for(int i=0;j<n;j++)
+		    {
+		        if(j==(n/2))
+		        {
+		            break;
+		        }
+		    }
+		}
+		
+		
+		// Operations = N/2+1
+		// Time Complexity = N
+		for(int i=0;i<n;i++)
+		{
+		    for(int i=0;j<n;j++)
+		    {
+		        if(j==(n/2))
+		        {
+		            break;
+		        }
+		    }
+		    break;
+		}
+		Arrays.sort(); // n log n
+		
+		// Operations = (N^2/4 * log n)
+		// Time Complexity = O(N^2 * log n)
+		for (int i = 0; i < n / 2; i++) // (N/2) , N 
+		{
+            for (int j = 1; j + n / 2 <= n; j++) // (N/2), N 
+            {
+                for (int k = 1; k <= n; k = k * 2) // log n, log n 
+                {
+                    
+                }
+            }
+		}
+		
+		// Operations = log n 
+		// Time Complexity = log n 
+		for(int i=n;i>=1;i=i/2) // logn 
+		{
+		    
+		}
+		
+// 		Time Complexity - O(N^3)
+	}
+}
