@@ -1,0 +1,145 @@
+public class Main
+{
+	public static void main(String[] args) 
+	{
+		
+		// 1. Number of operations in one second -> 10^8
+		// 10^8 --> 1 
+        //   (multiplying by 10)
+		// 10^9 --> 10 seconds 
+		
+		// O(1) --> Constant Time Complexity 
+		// O(log n) --> logamathic time Complexity 
+		// O(N) --> Linear 
+		// O(Nlog N) (base 10) 
+		// O(N^2) --> Quadratic time complexity 
+		// O(N^3)
+		
+		
+		Arrays.sort(); // Merge sort --> Nlog N 
+		
+		// Big O notation 
+		
+		int n = in.nextInt(); // O(1) // 1 <= N <= 10^6
+		int m = in.nextInt();
+		
+		
+		// Operations - N 
+		// Time Complexity - O(N)
+		
+		// Best case --> minimum number of operations in that scenario 
+		// Worst Case --> Maximum number of Operations (N is very high)
+		for(int i=0;i<n;i++)
+		{
+		    
+		}
+		
+		// Operations - N*M 
+		// Time Complexity - O(N*M)
+		for(int i=0;i<n;i++)
+		{
+		    for(int j=0;j<m;j++)
+		    {
+		        
+		    }
+		}
+		
+		// Operations = log n (base 2)
+		// Time Complexity = O(log n) 
+		for(int i=1;i<n;i=i*2) // (i = 1,2,4,8,16,32_____ --> log n)
+		{
+		    
+		}
+		
+		// Operations = N^3 
+		// Time Complexity = O(N^3)
+		for(int i=0;i<n;i++)
+		{
+		    for(int j=0;j<n*n;j++)
+		    {
+		        
+		    }
+		}
+		
+		// Operations = (N^2+N) (N^2 >>>> N)
+		// Time Complexity - O(N^2)
+		for(int i=0;i<n;i++)
+		{
+		    
+		}
+		for(int j=0;j<n*n;j++)
+	    {
+	        
+	    }
+	    
+	    
+		// Operations = (n/2)
+		// Time Complexity = O(n) (It will not be N/2 ? constants are ignored)
+		for(int i=1;i<=n;i=i+2) // (i = 1,2,4,8,16,32_____ --> log n)
+		{
+		    
+		}
+		
+		// Operations - 10*n 
+		// Time Complexity - O(N) (We are ignoring the constants)
+		for(int i=0;i<10*n;i++)
+		{
+		    
+		}
+		
+		// Operations - 100*n
+		// Time Complexity - O(N*M (where M is 100))
+		for(int i=0;i<100*n;i++)
+		{
+		    
+		}
+		
+		// Operations - sqrt(N)
+		// Time Complexity - O(sqrt(N))
+		for(int i=0;i<Math.sqrt(n);i++)
+		{
+		    
+		}
+		
+		
+		int a = 5; // 1 unit, O(1)
+		System.out.println(); // 1 unit, O(1)
+		
+		// 100 unit
+		for(int i=0;i<100;i++)
+		{
+		    // anything 
+		}
+		
+		// 10^6 operations
+		for(int i=0;i<1000;i++)
+		{
+		    int a = 5; // 1 
+		    int b = 7; // 1 
+		    int c = 7; // 1 
+		    for(int j=0;j<1000;j++) // 1000
+    		{
+    		    
+    		}
+		}
+		
+		// Lesser the number of operations, better will be the program 
+		
+		// 10^3 operations 
+		for(int i=0;i<1000;i++)
+		{
+		    int a = 5;
+		    int b = 7;
+		    int c = 7;
+		    
+		}
+		
+		int k=0;
+		// 100 operations 
+		while(k<100)
+		{
+		    // anything 
+		    k++;
+		}
+	}
+}
