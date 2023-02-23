@@ -1,0 +1,40 @@
+ //Count ABC
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+public class Main
+{
+        
+        public static int countABC(String str,int i)
+        {
+                // base case
+                     if(i+3>str.length())
+                     {
+                             return  0;
+                     }
+        
+                //recursive call
+                if(str.substring(i,i+3).compareTo("abc")==0 || str.substring(i,i+3).compareTo("aba") == 0)
+                {
+                      
+                        return 1+countABC(str,i+1);
+                        
+                }
+                else
+                {
+              
+                        return countABC(str,i+1);
+                        
+                }
+        }
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		//your code here
+                Scanner in=new Scanner(System.in);
+                String s=in.next();
+        
+                 int  ans=  countABC(s,0);
+                System.out.println(ans);
+	}
+}
