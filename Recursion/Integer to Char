@@ -1,0 +1,23 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+public class Main
+{
+	public static void main (String[] args) 
+	{
+	    // int --> char use type casting 
+	    // char --> int (No type casting needed)
+	    char x = 'd';
+	    System.out.println(x);
+	    
+	    char y = (char)(x-32); // line requires type casting
+	    char w = ('d'-32); // line works without type casting 
+	    
+	    int z = 'd';
+	    int a = x;
+	    
+	    System.out.println(z);
+	    System.out.println(a);
+	}
+}
