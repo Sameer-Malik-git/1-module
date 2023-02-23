@@ -1,0 +1,38 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		// Module Test --> 60%
+		// 5 mins --> 15 mins --> 20-25 mins
+		
+		Scanner in = new Scanner(System.in);
+	    
+	    int n = in.nextInt();
+	    int arr[] = new int[n];
+	    
+	    for(int i=0;i<n;i++)
+	    {
+	        arr[i] = in.nextInt();
+	    }
+	    
+	    // In case of unsorted first you need to sort the array 
+	    // SORTED ARRAY 
+        
+        int i = 0;
+        int j = 0;
+        
+        while(j<n)
+        {
+            // increment the value of j until and unless, you get a different element 
+            while(j<n && arr[j] == arr[i])
+            {
+                j++;
+            }
+            
+            int fre = (j-i); // frequency of ith element (Element at which i is pointing)
+            System.out.println(arr[i]+" --> "+fre);
+            
+            i = j; // i is jumping on unique elements 
+        }
+	}
+}
