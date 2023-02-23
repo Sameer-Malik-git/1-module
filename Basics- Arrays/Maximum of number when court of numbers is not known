@@ -1,0 +1,20 @@
+import java.util.*;
+public class Main {
+    public static void main(String args[]) {
+        Scanner in = new Scanner(System.in);
+        
+        // Limit of arrays --> size of arrays is fixed 
+
+        int maximumOfNumber = Integer.MIN_VALUE; // -10^18, 10^18
+        // Integer.MAX_VALUE
+        while(in.hasNextInt())
+        {
+            int x = in.nextInt();
+            maximumOfNumber = Math.max(maximumOfNumber, x);
+            // System.out.print(x+" ");
+        }
+        
+        System.out.println(maximumOfNumber);
+        // ArrayList --> If size is not known before then we will use ArrayList
+    }
+}
