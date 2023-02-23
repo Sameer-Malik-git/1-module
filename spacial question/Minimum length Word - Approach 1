@@ -1,0 +1,38 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner in = new Scanner(System.in);
+	    
+	    String a = in.nextLine();
+	    
+	    int i = 0;
+	    int j = 0;
+	    
+	    int minimumLength = Integer.MAX_VALUE;
+	    
+	    String ans = ""; // empty string 
+	    
+	    int l = a.length();
+	    while(j<l)
+	    {
+	        // keep incrementing j till when as soon as we find space or sentence is over 
+	        while(j<l && a.charAt(j)!=' ')
+	        {
+	            j++;
+	        }
+	        
+	        int lengthOfWord = (j-i);
+	        if(lengthOfWord < minimumLength)
+	        {
+	            minimumLength = lengthOfWord;
+	            ans = a.substring(i,j);
+	        }
+	        
+	        j++;
+	        i = j;
+	    }
+	    
+	    System.out.println(ans);
+	}
+}
