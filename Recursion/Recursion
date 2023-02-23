@@ -1,0 +1,60 @@
+public class Main
+{
+    // print all numbers from 1 to N 
+    public static void print(int currentNumber,int n)
+    {
+        // base case 
+        if(currentNumber>n)
+        {
+            return;
+        }
+        
+        // recursive case 
+        // System.out.print(currentNumber+" ");  // Print and then make a call  
+        print((currentNumber+1), n);
+        
+        System.out.print(currentNumber+" "); // call is made before then you are printing 
+    }
+    
+    // sum of all numbers from 1 to N
+    public static int recur(int currentNumber,int n)
+    {
+        // base case 
+        if(currentNumber > n)
+        {
+            return 0;
+        }
+        
+        // recursive case 
+        int currentAns = currentNumber + recur(currentNumber+1,n);
+        // System.out.println(currentAns);
+        return currentAns;
+    }
+    
+    // sum of all numbers from 1 to N (in reverse order)
+    public static int recur1(int n)
+    {
+        // base case 
+        if(n == 0)
+        {
+            return 0;
+        }
+        
+        // recursive case 
+        int currentAns = n + recur1(n-1);
+        return currentAns;
+    }
+	public static void main(String[] args) {
+		
+		int n = 3;
+// 		print(1,n);
+		int ans = recur(1,n);
+		
+		System.out.println(ans);
+		
+		// base case --> stopping condition (To stop the recursion)
+		// recursive case --> any line any function calls itself, it will be recursive case 
+		
+		//Recursion --> When a function calls itself then we will say that function recursive function 
+	}
+}
