@@ -1,0 +1,46 @@
+public class Main
+{
+	public static void main(String[] args) {
+		
+// 		int arr[] = {1,5,3,4,5,6,7,8,9,5};
+        
+//         // convert char array to string 
+//         char crr[] = {'1','2','3'};
+//         String s = new String(crr); // s = "123"
+        
+//         // create any string 
+//         String b = "sachin";
+        
+//         String s = new String("Virat");
+
+        // String s = "Sachin";
+        // s = s.concat("100"); // you need to enter strings only 
+        
+        // String s = "Sachin";
+        // s = 5.0 + 100 + 'a' + s + 100 + 5.0 + 'a'; // Both characters and integers they are converted to string 
+        
+        // int b = 100+100;
+        
+        // System.out.println(b);
+        // System.out.println(s);
+        
+        // 'a' - 'z' --> 97 - 122 
+        // 'A' - 'Z' --> 65 - 90 
+        // '0' - '9' --> 48 - 57
+        // ' ' (space) --> 32
+        
+        char e = 57;
+        System.out.println(e);
+        
+        // char to integer 
+        char x = '_';
+        int y = x;
+        System.out.println(y);
+        
+        // integer to character 
+        int z = 65;
+        char a = 1+'A';
+        System.out.println(a);
+        
+	}
+}
