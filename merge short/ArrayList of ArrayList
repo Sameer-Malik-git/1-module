@@ -1,0 +1,21 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+public class Main
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		
+// 		ArrayList<datatype> arraylistName = new ArrayList<>();
+		ArrayList<ArrayList<Integer>> arr = new ArrayList<>();
+		
+		ArrayList<Integer> a = new ArrayList<>();
+		a.add(1);
+		a.add(2);
+		
+		arr.add(a);
+		a.add(3);
+		arr.add(a);
+	}
+}
