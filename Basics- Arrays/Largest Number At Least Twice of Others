@@ -1,0 +1,45 @@
+import java.util.*;
+public class Main {
+    public static void main(String args[]) {
+        Scanner in = new Scanner(System.in);
+        
+        int n = in.nextInt();
+        int a[] = new int[n];
+    
+        int indexOfMaximumNumber = 0;
+        int maximumNumber = Integer.MIN_VALUE; // ~ -2*10^9
+        for(int i=0;i<n;i++)
+        {
+            a[i] = in.nextInt(); // we will input the number given by the user
+            if(a[i] > maximumNumber)
+            {
+                maximumNumber = a[i];
+                indexOfMaximumNumber = i;
+            }
+        }
+        
+        // assumption --> currently the maximum number is >= 2 * all number expect maximum number 
+        boolean flag = true; 
+        
+        for(int i=0;i<n;i++)
+        {
+            if(a[i]!= maximumNumber) // 
+            {
+                if(2*a[i]>maximumNumber) // condition for breaking the assumption
+                {
+                    flag = false;
+                    break;
+                }
+            }
+        }
+        
+        if(flag == true)
+        {
+            System.out.println(indexOfMaximumNumber);
+        }
+        else
+        {
+            System.out.println(-1);
+        }
+    }
+}
