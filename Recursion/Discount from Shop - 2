@@ -1,0 +1,36 @@
+import java.util.Scanner;
+import java.util.Arrays;
+class Solution{
+    public int minimumCost(int[] arr, int n) {
+        Arrays.sort(arr);
+        int cost = 0;
+		int i = n-1;
+		while(i>=0)
+		{
+		    // adding two values 
+		    cost += arr[i];
+		    if(i>=1) // i becomes 0 
+		    {
+		        cost += arr[i-1];
+		    }
+		    
+		    // decrementing the value of i 
+		    i = i-3;
+		}
+		
+		return cost;
+    }
+}
+public class Main {
+    public static void main(String args[]) {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt(); 
+        int[] cost = new int[n];  
+        for(int i=0; i<n; i++)  {  
+            cost[i]=sc.nextInt();  
+        } 
+        Solution obj=new Solution();
+        int ans= obj.minimumCost(cost, n);
+        System.out.print(ans);
+    }
+}
