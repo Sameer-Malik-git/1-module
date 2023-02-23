@@ -1,0 +1,39 @@
+public class Main
+{
+	public static void main(String[] args) 
+	{
+		// Stack, Queue, Linked list, Array, ArrayList, Hashmap, Matrix
+		
+		// O(1) --> Constant Space Complexity 
+		// O(log n) --> logamathic Space Complexity 
+		// O(N) --> Linear 
+		// O(Nlog N) (base 10) 
+		// O(N^2) --> Quadratic Space complexity 
+		// O(N^3)
+
+		
+		// Maximum number of elements you can store ~ 10^7 
+		// 10^5 / 10^6 
+		
+// 		1 <= n <= 100
+		
+		int n = in.nextInt(); // O(1)
+		int m = in.nextInt(); // O(1) 
+		
+		// 300 ~ O(1) 
+		
+		int fre[] = new int[256]; // ~ O(1)
+		
+		int arr[] = new int[n*n]; // O(N)
+		int brr[] = new int[n];
+		
+		int a[][] = new int[n][m]; // O(N*M) // (N =10^4 M = 10^4)
+		
+		// Operations = sqrt(N)
+		// Time complexity = O(sqrt(N))
+		for(int i=0;i*i<n;i++)
+		{
+		    
+		}
+	}
+}
