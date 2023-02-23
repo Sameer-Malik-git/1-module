@@ -1,0 +1,35 @@
+import java.io.*;
+import java.util.*;
+public class Main {
+    public static void main(String args[]) {
+        // your code here
+        Scanner in = new Scanner(System.in);
+        
+        String s1 = "abc";
+        String s2 = "deefeee"; // z = 122, a = 97  
+        
+        // Find out first character which is different --> subtract their ascii value 
+        // If first min_length characters are same --> subtract the length 
+        
+        
+        // int ans = s1.compareTo(s2); store it 
+        
+        // first > second --> +ve 
+        // first < second --> -ve 
+        // first == second --> 0
+        
+        System.out.println(s1.compareTo(s2));
+        System.out.println(s2.compareTo(s1));
+        
+        System.out.println(s1.equals(s2));
+        
+        s1 = s1.concat(s2);
+        
+        System.out.println(s1);
+        
+        System.out.println(s1.indexOf("feee")); // substring, character or that ascii value 
+        
+        System.out.println(s1.substring(1,5));
+        
+    }
+}
