@@ -1,0 +1,36 @@
+import java.util.*;
+
+public class Main
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		//your code here
+        Scanner sc=new Scanner(System.in);
+        
+        // char b = sc.next().charAt(0); // using this line you can input a single character 
+        
+        int l = sc.nextInt();
+        
+        String s = sc.next(); // input a word written by word
+        
+        // String to a character array 
+        char arr[] = new char[l];
+        for(int i=0;i<l;i++)
+        {
+            arr[i] = s.charAt(i); // s.charAt(i) will return the ith character 
+        }
+        
+        char brr[] = s.toCharArray(); // inbuilt function 
+        
+        double a[] = new double[3];
+        a[0] = 1.0;
+        a[1] = 2.0;
+        a[2] = 3.0;
+        
+        System.out.println(a);
+        
+        System.out.println(s);
+        System.out.println(arr);
+        System.out.println(brr);
+	}
+}
