@@ -1,0 +1,67 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+public class Main
+{
+    /// 12347846891234
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		//your code here
+        Scanner in = new Scanner(System.in);
+        int n = in.nextInt();
+		
+		int arr[] = new int[n];
+		for(int i=0;i<n;i++)
+		{
+		    arr[i] = in.nextInt();
+		}
+        
+        // 1. N-1 minimum element needs to placed at it's correct position (For loop 1)
+        // 2. Find index of minimum element and swap it (For loop and if condition)
+        
+        // Operations = (n*(n-1))/2
+        // Time Complexity = O(N^2)
+        
+        int totalSwaps = 0;
+        // Best Case (Array is sorted) --> O(N^2)
+        // Worst Case --> O(N^2)
+        for(int i=0;i<(n-1);i++) 
+        {
+            int minimumElement = arr[i];
+            int indexOfMinimumElement = i;
+            
+            // i = 0, j = n-1 
+            // i = 1, j = n-2 
+            
+            // i = n-1, j = 0
+            
+            // iterating on rest other elements 
+            for(int j=(i+1);j<n;j++)
+            {
+                if(arr[j] < minimumElement)
+                {
+                    minimumElement = arr[j];
+                    indexOfMinimumElement = j;
+                }
+            }
+            
+            // swapping ith element & indexOfMinimumElement
+            
+            if( i != indexOfMinimumElement)
+            {
+                totalSwaps++;
+                int temp = arr[i];
+                arr[i] = arr[indexOfMinimumElement];
+                arr[indexOfMinimumElement] = temp;
+            }
+            
+        }
+        
+        
+        for(int i=0;i<n;i++)
+		{
+		    System.out.print(arr[i]+" ");
+		}
+	}
+}
